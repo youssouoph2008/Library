@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="authors.html">Authors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Add a new book</h2>
+            <form action="add_book.php" method="post">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="read">Read:</label>
+                <input type="checkbox" id="read" name="read">
+                
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>My books</h2>
+            <div id="book-container">
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>
